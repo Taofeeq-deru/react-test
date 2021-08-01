@@ -8,9 +8,12 @@ const Button = () => {
 	};
 
 	return (
-		<button onClick={dummyFunction} title="dummyButton">
-			{value}
-		</button>
+		<>
+			<h1>Button component</h1>
+			<button onClick={dummyFunction} title="dummyButton">
+				{value}
+			</button>
+		</>
 	);
 };
 

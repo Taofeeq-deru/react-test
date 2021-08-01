@@ -1,15 +1,16 @@
 import "./App.css";
-import Button from "./components/Button/Button";
-import Search from "./components/Search/Search";
+// import Button from "./components/Button/Button";
+// import Search from "./components/Search/Search";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Layout from "./Layout";
 
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<Button />
-				<Search />
-			</header>
-		</div>
+		<Router>
+			<Switch>
+				<Route exact path="/:id" component={Layout} />
+			</Switch>
+		</Router>
 	);
 }
 

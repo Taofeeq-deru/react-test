@@ -8,12 +8,15 @@ const Search = () => {
 	};
 
 	return (
-		<input
-			type="text"
-			onChange={handleChange}
-			title="dummySearch"
-			value={inputValue}
-		/>
+		<>
+			<h1>Search component</h1>
+			<input
+				type="text"
+				onChange={handleChange}
+				title="dummySearch"
+				value={inputValue}
+			/>
+		</>
 	);
 };
 
